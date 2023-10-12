@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Website</title>
+    <style>
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie-card {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .movie-poster {
+            flex: 1;
+            max-width: 200px;
+            transition: transform 0.3s ease; /* Add a transition for scaling */
+        }
+
+        .movie-poster:hover {
+            transform: scale(1.1); /* Slightly magnify the image on hover */
+        }
+
+        .movie-poster img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .movie-details {
+            flex: 3;
+            padding: 20px;
+        }
+
+        .movie-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .movie-description {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Website</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="review.html">Reviews</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="movie1.jpg" alt="Movie 1 Poster">
+            </div>
+            <div class="movie-details">
+                <h2 class="movie-title">Forest Gump</h2>
+                <p class="movie-description">
+                    In 1981, a man named Forrest Gump recounts his life story to strangers who happen to sit next to him at a bus stop.
+                </p>
+                <p>For Ratings and critics review <a href="https://www.imdb.com/title/tt0109830/?ref_=fn_al_tt_1">Click Here</a></p>
+                <a href="https://en.wikipedia.org/wiki/Forrest_Gump">Read More</a>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="movie2.jpg" alt="Movie 2 Poster">
+            </div>
+            <div class="movie-details">
+                <h2 class="movie-title">The Wolf Of Wall Street</h2>
+                <p class="movie-description">
+                    New York stockbroker Jordan Belfort (Leonardo DiCaprio) develops habits of excess and corruption
+                </p>
+                <p>For Ratings and critics review <a href="https://www.imdb.com/title/tt0993846/?ref_=fn_al_tt_1">Click Here</a></p>
+                <a href="https://en.wikipedia.org/wiki/The_Wolf_of_Wall_Street_(2013_film)">Read More</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Movie Review Website
+    </footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <style>
+        /* Reset some styles for a cleaner look */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-bar {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .search-bar input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .genre-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .genre-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .genre-button:hover {
+            background-color: #555;
+        }
+
+        .movie-card {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .movie-poster {
+            flex: 1;
+            max-width: 200px;
+            transition: transform 0.2s;
+        }
+
+        .movie-poster img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .movie-poster:hover {
+            transform: scale(1.1);
+        }
+
+        .movie-details {
+            flex: 3;
+            padding: 20px;
+        }
+
+        .movie-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .movie-description {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Website</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a movie...">
+            <button>Search</button>
+        </div>
+        <div class="genre-buttons">
+            <button class="genre-button">Action</button>
+            <button class="genre-button">Drama</button>
+            <button class="genre-button">Comedy</button>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="movie 3.jpg" alt="Shawshank Redemption Poster">
+            </div>
+            <div class="movie-details">
+                <h2 class="movie-title">Shawshank Redemption</h2>
+                <p class="movie-description">
+                    An innocent man (Tim Robbins) goes to a Maine penitentiary for life in 1947.
+                </p>
+                <p>For Ratings and critics review <a href="https://www.imdb.com/title/tt0111161/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_shawsha">Click Here</a></p>
+                <a href="https://en.wikipedia.org/wiki/The_Shawshank_Redemption">Read More</a>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="movie4.jpg" alt="Avengers: Endgame Poster">
+            </div>
+            <div class="movie-details">
+                <h2 class="movie-title">Avengers: Endgame</h2>
+                <p class="movie-description">
+                    The Avengers devise a plan to bring back their vanquished allies for an epic showdown with Thanos.
+                </p>
+                <p>For Ratings and critics review <a href="https://www.imdb.com/title/tt4154796/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_avengers%2520e">Click Here</a></p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Movie Review Website
+    </footer>
+</body>
+</html>

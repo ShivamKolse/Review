@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Reusing the CSS styles from the previous pages */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            font-size: 1.5rem;
+        }
+
+        .container p {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        form {
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        input[type="email"],
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        #contactInfo {
+            display: flex;
+        }
+
+        #contactEmail,
+        #contactPhone {
+            flex: 1;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Website</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions, feedback, or inquiries? Please feel free to reach out to us.</p>
+        <form action="contact_form_handler.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label for="contactInfo">Contact Information:</label>
+            <div id="contactInfo">
+                <input type="text" id="contactEmail" name="contactEmail" placeholder="Email">
+                <input type="tel" id="contactPhone" name="contactPhone" placeholder="Phone Number">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2023 Movie Review Website
+    </footer>
+</body>
+</html>
